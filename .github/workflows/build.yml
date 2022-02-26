@@ -1,4 +1,3 @@
-@ -0,0 +1,95 @@
 on: [push, pull_request, workflow_dispatch]
 
 name: Build
