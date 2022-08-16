@@ -15,27 +15,27 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
+// |  ESC |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |   BKSP    |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |    '      |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | SHFT(RET) |
 //                         | ALT | LWR | SPC | RSE  | ALT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+   &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
+   &kp LCTRL &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
                         &kp LALT  &mo 1 &kp SPACE &mo 2  &kp RALT
                         >;
                 };
 
                 lower_layer {
 // ----------------------------------------------------------------------------------
-// |TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
+// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
+// |TAB |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
-   &kp TAB &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
+   &trans  &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
+   &kp TAB &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
    &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT RET
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
@@ -43,14 +43,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-// |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
+// |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
+// |TAB |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
-   &kp TAB &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
-   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+   &trans  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+   &kp TAB &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
+   &trans  &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };
